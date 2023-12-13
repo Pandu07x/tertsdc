@@ -1,0 +1,15 @@
+<!-- <mat-toolbar style="background-color: #11101D;">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon style="color: #fff;" routerLink="/login">login</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon style="color: #fff;">account_circle</mat-icon>
+  </button>
+</mat-toolbar> -->
+<div class="content" [ngClass]="{ 'shifted': isSidebarOpen | async }">
+  <router-outlet></router-outlet>
+</div>
